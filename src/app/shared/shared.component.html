@@ -1,0 +1,41 @@
+<div class="shared__wrapper">
+    <div class="shared__header" [ngStyle]="style.headerTitleStyle()">
+        Shared
+    </div>
+    <div class="card__sections">
+        <div class="section__header" [ngStyle]="style.sectionHeaderStyle()">
+            Resources</div>
+        <div class="card__content">
+            <div class="cards" [ngStyle]="style.cardStyle()"
+                (click)="openModal('soundManager')">
+                <div class="card__icon"
+                    [ngStyle]="style.iconStyle(soundIconURL)">
+                </div>
+                <div class="right__content">
+                    <span class="card__title"
+                        [ngStyle]="style.cardTitleStyle()"> Sound Manager
+                    </span>
+                    <div class="card__description"
+                        [ngStyle]="style.cardDescriptionStyle()">
+                        CometChatSoundManager allows you to play different types
+                        of audio which is required for incoming and outgoing
+                        events in UI Kit.
+                    </div>
+                </div>
+            </div>
+            <div class="cards" [ngStyle]="style.cardStyle()"
+                (click)="openModal('theme')">
+                <div class="card__icon"
+                    [ngStyle]="style.iconStyle(themeIconURL)">
+                </div>
+                <div class="right__content">
+                    <span class="card__title"
+                        [ngStyle]="style.cardTitleStyle()">Theme</span>
+                    <div class="card__description"
+                        [ngStyle]="style.cardDescriptionStyle()">
+                        CometChatTheme is a style applied to every component and
+                        every view in the activity or component in the UI Kit.
+                    </div>
+                </div>
+            </div>
+ 

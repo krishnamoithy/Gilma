@@ -1,0 +1,91 @@
+<div class="home__screen">
+  <div class="home__screen__sidebar" [@FadeInFadeOut]="checkAnimatedState"
+    [ngStyle]="style.sidebarStyle()">
+    <div class="sidebar__header">
+      <span class="header__title" [ngStyle]="style.headerTitleStyle()">
+        GilMA-MESSANER
+      </span>
+    </div>
+    <div class="sidebar__content">
+      <div class="cards" routerLink="chats-module" [ngStyle]="style.cardStyle()"
+        (click)="changePage('chats')">
+        <div class="left__content">
+          <span class="card__title" [ngStyle]="style.cardTitleStyle()">
+            Chats
+          </span>
+
+
+        </div>
+        <div class="card__icon" [ngStyle]="style.iconStyle()"></div>
+      </div>
+
+      <!-- call log started -->
+      <div class="cards" routerLink="call-logs-module"
+        [ngStyle]="style.cardStyle()" (click)="changePage('call-logs')">
+        <div class="left__content">
+          <span class="card__title" [ngStyle]="style.cardTitleStyle()">
+            Call Logs</span>
+        </div>
+        <div class="card__icon" [ngStyle]="style.iconStyle()"></div>
+      </div>
+      <!-- call log ended -->
+
+      <div class="cards" routerLink="users-module" [ngStyle]="style.cardStyle()"
+        (click)="changePage('users')">
+        <div class="left__content">
+          <span class="card__title"
+            [ngStyle]="style.cardTitleStyle()">Users</span>
+
+        </div>
+        <div class="card__icon" [ngStyle]="style.iconStyle()"></div>
+      </div>
+      <div class="cards" routerLink="groups-module"
+        [ngStyle]="style.cardStyle()" (click)="changePage('groups')">
+        <div class="left__content">
+          <span class="card__title"
+            [ngStyle]="style.cardTitleStyle()">Groups</span>
+
+        </div>
+        <div class="card__icon" [ngStyle]="style.iconStyle()"></div>
+      </div>
+      <div class="cards" routerLink="shared-module"
+        [ngStyle]="style.cardStyle()" (click)="changePage('setting')">
+        <div class="left__content">
+          <span class="card__title"
+            [ngStyle]="style.cardTitleStyle()">Setting</span>
+
+        </div>
+        <div class="card__icon" [ngStyle]="style.iconStyle()"></div>
+      </div>
+    </div>
+    <div class="sidebar__footer">
+      <footer [ngStyle]="style.footerStyle()">4.2.0</footer>
+    </div>
+  </div>
+  <div class="home__screen__main" [ngStyle]="style.mainscreenStyle()">
+    <div class="navbar">
+      <div class="navbar__left">
+        <span class="root__page" [ngStyle]="style.rootPageStyle()"
+          (click)="goBack()">
+          GIlMA
+        </span>
+        <span class="pointer" [ngStyle]="style.pointerStyle()">
+          <span [ngStyle]="style.navigateIconURL()"></span>
+        </span>
+        <span class="active__page" [ngStyle]="style.currentPageStyle()">
+          {{ pageName }}</span>
+      </div>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>  
+<div class="navbar__right">
+  <div class="theme__mode" [ngStyle]="style.themeModeIoncStyle()"
+    (click)="changeTheme()"></div>
+  <div class="logout__icon" [ngStyle]="style.logoutIoncStyle()"
+    (click)="logout()"></div>
+</div>
+
+<cometchat-incoming-call></cometchat-incoming-call>

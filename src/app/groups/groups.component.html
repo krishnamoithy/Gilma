@@ -1,0 +1,35 @@
+<div class="groups__wrapper">
+    <div class="groups__header" [ngStyle]="style.headerTitleStyle()">
+      Groups
+    </div>
+    <div class="card__content">
+        <div class="cards" [ngStyle]="style.cardStyle()" (click)="redirect('groups-with-messages')">
+            <div class="card__icon" [ngStyle]="style.iconStyle(sidebarIconURL)">
+
+            </div>
+            <div class="right__content">
+                <span class="card__title" [ngStyle]="style.cardTitleStyle()" >Groups With Messages</span>
+                <div class="card__description" [ngStyle]="style.cardDescriptionStyle()">
+                    CometChatGroupsWithMessages is an independent component used to set up a screen that shows the list of groups available in your app and gives you the ability to search for a specific group and to start a conversation
+
+                </div>
+            </div>
+
+        </div>
+        <div class="cards" [ngStyle]="style.cardStyle()" (click)="redirect('groups')">
+            <div class="card__icon" [ngStyle]="style.iconStyle(listwrapperIconURL)">
+
+            </div>
+            <div class="right__content">
+                <span class="card__title" [ngStyle]="style.cardTitleStyle()" > Groups</span>
+                <div class="card__description" [ngStyle]="style.cardDescriptionStyle()">
+                    CometChatGroups is an independent component used to set up a screen that displays the list of groups available in your app and gives you the ability to search for a specific group
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+</div>
