@@ -8,7 +8,7 @@ import {
 import { ChatsComponent } from './chats/chats.component';
 import { ConversationsDemoComponent } from './chats/conversations-demo/conversations-demo.component';
 import { ConversationsWithMessagesDemoComponent } from './chats/conversations-with-messages-demo/conversations-with-messages-demo.component';
-import { GroupsDemoComponent } from './groups/groups-demo/groups-demo.component';
+// import { GroupsDemoComponent } from './groups/groups-demo/groups-demo.component';
 import { GroupsWithMessagesDemoComponent } from './groups/groups-with-messages-demo/groups-with-messages-demo.component';
 import { GroupsComponent } from './groups/groups.component';
 import { HomeComponent } from './home/home.component';
@@ -25,12 +25,12 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UsersDemoComponent } from './users/users-demo/users-demo.component';
 import { UsersWithMessagesDemoComponent } from './users/users-with-messages-demo/users-with-messages-demo.component';
 import { UsersComponent } from './users/users.component';
-import { CreateGroupDemoComponent } from './groups/create-group-demo/create-group-demo.component';
-import { JoinGroupDemoComponent } from './groups/join-group-demo/join-group-demo.component';
-import { GroupMembersDemoComponent } from './groups/group-members-demo/group-members-demo.component';
+// import { CreateGroupDemoComponent } from './groups/create-group-demo/create-group-demo.component';
+// import { JoinGroupDemoComponent } from './groups/join-group-demo/join-group-demo.component';
+// import { GroupMembersDemoComponent } from './groups/group-members-demo/group-members-demo.component';
 import { AddMembersDemoComponent } from './groups/add-members-demo/add-members-democomponent';
-import { TransferOwnershipDemoComponent } from './groups/transfer-ownership-demo/transfer-ownership-demo.component';
-import { BannedMembersDemoComponent } from './groups/banned-members-demo/banned-members-demo.component';
+// import { TransferOwnershipDemoComponent } from './groups/transfer-ownership-demo/transfer-ownership-demo.component';
+// import { BannedMembersDemoComponent } from './groups/banned-members-demo/banned-members-demo.component';
 import { DetailsDemoComponent } from './shared/details-demo/details-demo.component';
 // import { CallsComponent } from './calls/calls.component';
 // import { CallButtonsDemoComponent } from './calls/call-buttons-demo/call-buttons-demo.component';
@@ -109,35 +109,35 @@ const routes: Routes = [
     path: 'groups-with-messages',
     component: GroupsWithMessagesDemoComponent,
   },
-  {
-    path: 'groups',
-    component: GroupsDemoComponent,
-  },
+  // {
+  //   path: 'groups',
+  //   component: GroupsDemoComponent,
+  // },
 
-  {
-    path: 'create-group',
-    component: CreateGroupDemoComponent,
-  },
-  {
-    path: 'join-group',
-    component: JoinGroupDemoComponent,
-  },
-  {
-    path: 'group-members',
-    component: GroupMembersDemoComponent,
-  },
+  // {
+  //   path: 'create-group',
+  //   component: CreateGroupDemoComponent,
+  // },
+  // {
+  //   path: 'join-group',
+  //   component: JoinGroupDemoComponent,
+  // },
+  // {
+  //   path: 'group-members',
+  //   component: GroupMembersDemoComponent,
+  // },
   {
     path: 'add-member',
     component: AddMembersDemoComponent,
   },
-  {
-    path: 'transfer-ownership',
-    component: TransferOwnershipDemoComponent,
-  },
-  {
-    path: 'banned-members',
-    component: BannedMembersDemoComponent,
-  },
+  // {
+  //   path: 'transfer-ownership',
+  //   component: TransferOwnershipDemoComponent,
+  // },
+  // {
+  //   path: 'banned-members',
+  //   component: BannedMembersDemoComponent,
+  // },
   {
     path: 'details',
     component: DetailsDemoComponent,

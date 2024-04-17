@@ -115,6 +115,7 @@ export class LoginComponent implements OnInit {
   consoleError(event:any){
     this.error = ""
   }
+  
   styles:any = {
     loginWrapperStyle : ()=>{
       return{

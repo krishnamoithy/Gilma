@@ -9,7 +9,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { CometChatCallLogDetails, CometChatCallLogHistory, CometChatCallLogParticipants, CometChatCallLogRecordings, CometChatCallLogs, CometChatCallLogsWithDetails, CometChatContacts, CometChatConversations, CometChatConversationsWithMessages,  CometChatGroups, CometChatGroupsWithMessages, CometChatIncomingCall, CometChatMessageBubble, CometChatMessageComposer, CometChatMessageHeader, CometChatMessageInformation, CometChatMessageList, CometChatMessages, CometChatUsers, CometChatUsersWithMessages } from '@cometchat/chat-uikit-angular';
 import { RouterModule } from '@angular/router';
 // import { MessagesDemoComponent } from './messages/messages-demo/messages-demo.component';
-import { GroupsDemoComponent } from './groups/groups-demo/groups-demo.component';
+// import { GroupsDemoComponent } from './groups/groups-demo/groups-demo.component';
 import { UsersDemoComponent } from './users/users-demo/users-demo.component';
 import { ConversationsWithMessagesDemoComponent } from './chats/conversations-with-messages-demo/conversations-with-messages-demo.component';
 import { ConversationsDemoComponent } from './chats/conversations-demo/conversations-demo.component';
@@ -40,7 +40,7 @@ import { CallLogHistoryDemoComponent } from './call-logs/call-log-history-demo/c
     LoginComponent,
     SignUpComponent,
     // MessagesDemoComponent,
-    GroupsDemoComponent,
+    // GroupsDemoComponent,
     UsersDemoComponent,
     ConversationsWithMessagesDemoComponent,
     ConversationsDemoComponent,

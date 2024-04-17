@@ -22,6 +22,7 @@
     "@cometchat/calls-sdk-javascript": "^4.0.6",
     "@cometchat/chat-uikit-angular": "~4.2.0",
     "abab": "^2.0.6",
+    "firebase": "^10.10.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
